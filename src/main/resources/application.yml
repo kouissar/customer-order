@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  h2:
+    console:
+      enabled: true
+  application:
+    name: Order-Service
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8082/eureka
+  instance:
+    hostname: localhost
+logging:
+  file: /Users/rafik/projects/java/springboot/customer/log/customer.log
